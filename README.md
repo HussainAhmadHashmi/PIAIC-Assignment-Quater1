@@ -1,2 +1,2 @@
-# PIAIC-Assignment-Quater1
-This is my Quater 1 Assignment of PIAIC
+# PIAIC-Assignment-1
+This is my first assignment of quater-1 in PIAIC.
