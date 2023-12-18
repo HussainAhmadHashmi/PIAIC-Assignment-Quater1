@@ -1,5 +1,5 @@
-
-const personName:string = "Hussain Ahmad"
+import { personName } from "./q2";
+const personname:string = "Hussain Ahmad"
 // console.log(personName);
 
 
