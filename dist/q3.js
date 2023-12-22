@@ -1,17 +1,21 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const q2_1 = require("./q2");
+// import { personName } from "./q2";
 const personname = "Hussain Ahmad";
-// console.log(personName);
+// console.log(personname);
 // Lowercase
-const lowerCaseName = q2_1.personName.toLowerCase();
-console.log(lowerCaseName);
-// Uppercase
-const UpperCaseName = q2_1.personName.toUpperCase();
-console.log(UpperCaseName);
+const lowerCaseName = personname.toLowerCase();
+console.log(`To lowerCase Name: ${lowerCaseName}`);
+// uppercase
+const lowerUpperName = personname.toUpperCase();
+console.log(`To lowerCase Name: ${lowerUpperName}`);
 // Titlecase
-function titleCaseName(modify) {
-    return modify.replace(/\b\w/g, (match) => match.toUpperCase());
+const Alphabets = personname.toLowerCase().split("");
+// console.log(Alphabets);
+Alphabets[0] = (Alphabets[0].toUpperCase());
+for (let x = 0; x < Alphabets.length; x++) {
+    if (Alphabets[x] == " ") {
+        Alphabets[x + 1] = Alphabets[x + 1].toUpperCase();
+    }
 }
-const titleCase = titleCaseName(q2_1.personName);
-console.log(q2_1.personName);
+const titleCase = Alphabets.join("");
+console.log(`To TitleCase Name: ${titleCase}`);
