@@ -1,6 +1,8 @@
 // Question 11: Print an array that each person name print in a verticall list.
 
 const names:string[] = ["Ezan", 'Raja', "Moaz", "Zaqi", "Aqib", 'Ali']
+console.log(names.slice(1));
+
 
 // =========================== Method 1 ======================
 console.log(`Simple Print from array index:- ${names[0]}`);

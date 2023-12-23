@@ -1,6 +1,7 @@
 // Question 12: repeat question 11 including print a same message for every array value
 
 const friendsNames:string[] = ["Ezan", 'Raja', "Moaz", "Zaqi", "Aqib", 'Ali']
+console.log(friendsNames);
 
 // =========================== Method 1 ======================
 console.log(`How Are You Buddy:- ${friendsNames[0]}`);

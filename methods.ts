@@ -71,7 +71,7 @@ let myDate = new Date()
 const myarr = ["h", "a", "b", 2, true]
 const myarr2 = ["ahmad", 111 , "hamza", 4]
 myarr.push(...myarr2)
-// console.log(myarr);
+console.log(myarr);
 // console.log(myarr.length);
 // console.log(myarr.push(...myarr2));
 // console.log(myarr[3]);
