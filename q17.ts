@@ -31,27 +31,3 @@ console.log("\nFinal Guest List:");
 console.log("Empty list:" , InvitationList);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// Update list
-// const removeGUEST: string = "Mr. Imran Khan";
-// const addNewGUEST: string = "Mr. Shahid Afridi";
-// const additionalGuest: string[] = ["Ms. Malala Yousafzai", "Mr. Abdul Sattar Edhi", "Ms. Benazir Bhutto"];
-
-// const NewInvitationList: string[] = [...InvitationList.filter((guest) => guest !== removeGUEST), addNewGUEST, ...additionalGuest];
-
-// console.log("New Guest List:");
-// for (const list of NewInvitationList) {
-//     console.log(`Dear! "${list}"
-//     I am inviting you for having Dinner. Could you please come \n \n`);
-// }
