@@ -1,4 +1,5 @@
-// Question 23:
+// Question 23: Write series of conditional test 
+// variables
 let a = 10, b= 1,b2= 15, c= "ahmad", d= true 
 const Pak:string | null |undefined = null
 let NotDeclearValue;
