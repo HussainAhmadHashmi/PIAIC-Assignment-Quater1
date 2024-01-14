@@ -1,15 +1,17 @@
 // Question 32: 
 
-const current_users:string[] = ["Admin", "Ezan00123", "Aqib00345", "Ali000987", "Zaqi87654", "Raja12098"] 
-const new_users:string[] = ["Ubab", "Adan", "Ali000987", "Zaqi87654", "Qasim", "Yawer", "Shahmeer", "Irtaza", "Hadi"]
+const currentUsers: string[] = ["Ahmad123", "EZan234", "Ali444", "Raja112", 'Faraz456', "Zaqi 229"];
+const newUsers: string[] = ["EZAN234", "Adan657", "Ali444", "Qasim100"];
 
-for (const user of new_users) {
-    const isUsernameTaken = current_users.some((existingUser) => existingUser.toLowerCase() === user.toLowerCase());
+for (const uniqueUsers of newUsers) {
 
-    if (isUsernameTaken) {
-        console.log(`Sorry, the username '${new_users}' is already taken. Please choose a different one.`);
+    const usernameExists = currentUsers.some(
+        currentUsername => currentUsername.toLowerCase() === uniqueUsers.toLowerCase()
+    );
+
+    if (usernameExists) {
+        console.log(`Sorry, the username ${uniqueUsers} is already in use. Please enter a new username.`);
     } else {
-        console.log(`Congratulations! The username '${new_users}' is available.`);
+        console.log(`The username ${uniqueUsers} is available.`);
     }
 }
-    

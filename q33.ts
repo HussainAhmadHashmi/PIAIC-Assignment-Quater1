@@ -1,25 +1,19 @@
-export const current_users: string[] = ["John", "Alice", "Bob", "Charlie", "Eve"];
-const new_users: string[] = ["Alice", "Dave", "John", "FRANk", "Mallory"];
+// Question : print an array with loop and output in ordinary numbers and every output in a seperate line
 
-for (const newUser of new_users) {
-    const isUsernameTaken = current_users.some((existingUser) => existingUser.toLowerCase() === newUser.toLowerCase());
+const number: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-    if (isUsernameTaken) {
-        console.log(`Sorry, the username '${newUser}' is already taken. Please choose a different one.`);
+for (const num of number) {
+    let ordinary: string;
+
+    if (num === 1) {
+        ordinary = 'st';
+    } else if (num === 2) {
+        ordinary = 'nd';
+    } else if (num === 3) {
+        ordinary = 'rd';
     } else {
-        console.log(`Congratulations! The username '${newUser}' is available.`);
+        ordinary = 'th';
     }
+
+    console.log(`${num}${ordinary}`);
 }
-
-
-// for (const newUser of new_users) {
-//     const isTaken = current_users.some(function (existingUser) {
-//         return isUsernameTaken(existingUser, newUser);
-//     });
-
-//     if (isTaken) {
-//         console.log(`Sorry, the username '${newUser}' is already taken. Please choose a different one.`);
-//     } else {
-//         console.log(`Congratulations! The username '${newUser}' is available.`);
-//     }
-// }
